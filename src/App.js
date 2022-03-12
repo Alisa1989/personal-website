@@ -2,17 +2,24 @@ import {Routes, Route, BrowserRouter as Router} from "react-router-dom";
 
 import './App.css';
 
+import Header from "./components/Header";
+import Home from "./components/Home";
+import AboutMe from "./components/AboutMe";
+import Portfolio from "./components/Portofolio";
+import Resume from "./components/Resume";
+
 function App() {
   return (
     <Router>
 
     <div className="App">
-      <Routes>
-        <p>Home</p>
-        <p>About Me</p>
-        <p>Projects</p>
-        <p>Resume</p>
-      </Routes>
+      {/* <Routes> */}
+        <Header/>
+        <Home/>
+        <AboutMe/>
+        <Portfolio/>
+        <Resume/>
+      {/* </Routes> */}
     </div>
     </Router>
   );
