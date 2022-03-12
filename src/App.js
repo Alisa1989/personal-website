@@ -2,8 +2,11 @@ import {Routes, Route, BrowserRouter as Router} from "react-router-dom";
 
 import './App.css';
 
+import Header from "./components/Header";
 import Home from "./components/Home";
 import AboutMe from "./components/AboutMe";
+import Portfolio from "./components/Portofolio";
+import Resume from "./components/Resume";
 
 function App() {
   return (
@@ -11,10 +14,11 @@ function App() {
 
     <div className="App">
       {/* <Routes> */}
+        <Header/>
         <Home/>
         <AboutMe/>
-        <p>Projects</p>
-        <p>Resume</p>
+        <Portfolio/>
+        <Resume/>
       {/* </Routes> */}
     </div>
     </Router>

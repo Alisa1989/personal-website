@@ -1,5 +1,9 @@
 import React from "react";
 
+import Florence from "../img/Firenze.jpg";
+import SF from "../img/SF.jpg";
+import CodeLove from "../img/codeLove.jpg";
+
 const AboutMe = () => {
     return(
         <section className="about">
@@ -31,14 +35,14 @@ const AboutMe = () => {
                         organization’s strengths are and how to adapt to it’s vulnerabilities.
                     </p>
                 </div>
-                {/* <div class="about__content__composition">
-                    <img src="img/codeLove.jpg" alt="Photo of heart shaped computer bits"
-                        class="composition__photo composition__photo--p1"/>
-                    <img src="img/SF.jpg" alt="Photo of San Francisco's Golden Gate"
-                        class="composition__photo composition__photo--p2"/>
-                    <img src="img/Firenze.jpg" alt="Photo of Florence's Duomo in Italy"
-                        class="composition__photo composition__photo--p3"/>
-                </div> */}
+                <div className="about__content__composition">
+                    <img src={CodeLove} alt="heart shaped computer bits"
+                        className="composition__photo composition__photo--p1"/>
+                    <img src={SF} alt="San Francisco's Golden Gate"
+                        className="composition__photo composition__photo--p2"/>
+                    <img src={Florence} alt="Florence's Duomo in Italy"
+                        className="composition__photo composition__photo--p3"/>
+                </div>
             </div>
         </section>
     )
