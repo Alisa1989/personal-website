@@ -1,4 +1,5 @@
 import React from "react";
+import { projects } from "../data";
 
 const Portfolio = () => {
     return(
@@ -6,40 +7,20 @@ const Portfolio = () => {
             <h2>
                 Some of my most recent projects
             </h2>
-            <div className="projects" id="projects">
-                <a className="projects__card" href="https://github.com/Alisa1989/team-builder/tree/alexandre-steinhauslin">
+            {projects.map(p => (
+                <div className="projects" id="projects">
+                <a className="projects__card" href={p.link}>
                     <div className="projects__card__text">
                         <h3>
-                            React Form
+                            {p.title}
                         </h3>
                         <p>
-                            This is an example of Form management in React
-                        </p>
-                    </div>
-                </a>
-                <a className="projects__card" href="https://github.com/Alisa1989/React-Todo/tree/alexandre-steinhauslin">
-                    <div className="projects__card__text">
-                        <h3>
-                            To-Do List
-                        </h3>
-                        <p>
-                            This project demonstrates my ability to use the older technique of class components in
-                            React.
-                        </p>
-                    </div>
-                </a>
-                <a className="projects__card"
-                    href="https://github.com/Alisa1989/React-Github-User-Card/tree/alexandre-steinhauslin">
-                    <div className="projects__card__text">
-                        <h3>
-                            Github Usercard
-                        </h3>
-                        <p>
-                            Another example of the usage of class components and the React lifecycle.
+                            {p.description}
                         </p>
                     </div>
                 </a>
             </div>
+            ))}
         </section>
     )
 }
