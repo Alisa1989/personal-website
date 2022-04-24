@@ -37,6 +37,25 @@ body {
   background-position: center;
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 97%);
 }
+.home__welcome {
+  margin-bottom: 6rem;
+}
+.home__welcome-container {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+  margin-bottom: 6rem;
+  color: white;
+}
+.home__welcome--title {
+  font-size: 4rem;
+}
+.home__welcome--text {
+  font-size: 3rem;
+}
 
 .navbar {
   justify-content: space-between;
