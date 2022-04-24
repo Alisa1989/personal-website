@@ -1,7 +1,51 @@
-
+@import 'base';
 
 .home {
     height: 95vh;
-    background-image: url("../src/img/pinetaNonna.jpg");
+    background-image: linear-gradient(to right bottom, $red-bg, $orange-bg), url("../src/img/pinetaNonna.jpg");
     background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 97%);
+}
+
+.navbar {
+    justify-content: space-between;
+    align-items: left;
+    background-color: white;
+    padding: 0% 0% 1% 0%;
+    text-align: left;
+    border-bottom: 1px solid black;
+}
+
+.navbar__heading {
+    align-self: left;
+    font-weight: normal;
+}
+
+.navbar__heading--main {
+    display: block;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    font-weight: 700;
+    border-bottom: 2px solid black;
+}
+
+.navbar__heading--sub {
+    display: block;
+    font-size: 2.5rem;
+    letter-spacing: 2.2rem;
+    font-weight: 700;
+}
+
+.nav-button {
+    color: black;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+.nav-button:hover {
+    color: white;
+    background-color: #3d3d3d;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 6px -2px #000;
 }
