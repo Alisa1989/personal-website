@@ -6,6 +6,29 @@
     background-size: cover;
     background-position: center;
     clip-path: polygon(0 0, 100% 0, 100% 75%, 0 97%);
+
+    &__welcome {
+        margin-bottom: 6rem;
+
+        &-container {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 90%;
+            margin-bottom: 6rem;
+            color: white;
+        }
+
+        &--title {
+            font-size: 4rem;
+        }
+
+        &--text {
+            font-size: 3rem;
+        }
+    }
 }
 
 .navbar {
