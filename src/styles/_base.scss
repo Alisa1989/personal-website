@@ -1,3 +1,5 @@
+@import 'layout';
+
 //VARIABLES
 $base-color: white;
 $secondary-color: green;
@@ -7,7 +9,6 @@ $red-bg: rgba(255, 0, 0, 0.281);
 //RESETS
 *, *:before, *:after{
     box-sizing: border-box;
-    font-size: 62.5%;
     margin: 0;
     padding: 0;
 }
@@ -15,8 +16,25 @@ $red-bg: rgba(255, 0, 0, 0.281);
 body{
     font-family: "Montserrat", sans-serif;
     font-weight: 300;    
-    font-size: 20rem;
+    font-size: 1.6rem;
     line-height: 1.7;
     color: black;
     padding: 2%;
 }
+
+html {
+    font-size: 62.5%;
+    
+    @include respond(tab-land) {  //<1200
+      font-size: 56.25%;
+    }
+  
+    @include respond(tab-port) { //<900
+      font-size: 50%;
+    }
+    
+    @include respond(big-desktop) {
+      font-size: 75%;
+    }
+  
+  }
