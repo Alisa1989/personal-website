@@ -3,9 +3,8 @@ import resume from "../other_resources/Alexandre Steinhauslin.pdf";
 
 const Resume = () => {
     return(
-        <section className="resume" id="resume">
-            <embed className="pdf-container" src={resume} type="application/pdf" width="auto"
-                height="auto"/>
+        <section>
+            <a href={resume} target="_blank" className="button resume_button">View Resume</a>
         </section>
     )
 }

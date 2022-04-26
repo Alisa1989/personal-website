@@ -42,12 +42,16 @@ html {
   border-radius: 10rem;
   transition: all 0.2s;
   position: relative;
-  background-color: #fff;
-  color: #777;
+  background-color: white;
+  color: gray;
 }
 .button:active {
   transform: translateY(-3px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+.button.resume_button {
+  background-color: green;
+  color: white;
 }
 
 *, *:before, *:after {
@@ -94,12 +98,16 @@ html {
   border-radius: 10rem;
   transition: all 0.2s;
   position: relative;
-  background-color: #fff;
-  color: #777;
+  background-color: white;
+  color: gray;
 }
 .button:active {
   transform: translateY(-3px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+.button.resume_button {
+  background-color: green;
+  color: white;
 }
 
 .home {
