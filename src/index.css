@@ -32,6 +32,24 @@ html {
   }
 }
 
+.button:link, .button:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: gray;
+  padding: 1rem 3rem;
+  display: inline-block;
+  text-align: center;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  background-color: #fff;
+  color: #777;
+}
+.button:active {
+  transform: translateY(-3px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0;
@@ -66,6 +84,24 @@ html {
   }
 }
 
+.button:link, .button:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: gray;
+  padding: 1rem 3rem;
+  display: inline-block;
+  text-align: center;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  background-color: #fff;
+  color: #777;
+}
+.button:active {
+  transform: translateY(-3px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
 .home {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(255, 0, 0, 0.281), rgba(202, 166, 66, 0.233)), url("../src/img/pinetaNonna.jpg");
@@ -89,9 +125,6 @@ html {
 .home__welcome--title {
   font-size: 4rem;
 }
-.home__welcome--text {
-  font-size: 3rem;
-}
 
 .navbar {
   position: fixed;
@@ -101,7 +134,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
+  background-color: #ffffff;
   padding: 0% 5% 1% 5%;
   border-bottom: 1px solid black;
   z-index: 2;
@@ -138,13 +171,10 @@ html {
   color: white;
   background-color: #3d3d3d;
   border-radius: 0.5rem;
-  box-shadow: 0 1px 6px -2px #000;
 }
 
 .nav-content {
-  background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 2;
 }
 
