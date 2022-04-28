@@ -6,7 +6,7 @@ import CodeLove from "../img/codeLove.jpg";
 
 const AboutMe = () => {
   return (
-    <section className="about">
+    <section id="about">
       <h2>About Me</h2>
       <div className="grid_container">
         <div className="grid_item text--1">
