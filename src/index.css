@@ -6,10 +6,6 @@
   grid-template-columns: 50% 50%;
 }
 
-.grid_photo_container {
-  text-align: center;
-}
-
 .grid_item {
   padding: 5%;
 }
@@ -96,10 +92,6 @@ html {
   grid-template-columns: 50% 50%;
 }
 
-.grid_photo_container {
-  text-align: center;
-}
-
 .grid_item {
   padding: 5%;
 }
@@ -128,10 +120,6 @@ html {
   place-items: center;
   grid-template-rows: auto auto auto;
   grid-template-columns: 50% 50%;
-}
-
-.grid_photo_container {
-  text-align: center;
 }
 
 .grid_item {

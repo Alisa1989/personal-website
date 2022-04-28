@@ -53,14 +53,11 @@ const AboutMe = () => {
             it’s vulnerabilities.
           </p>
         </div>
-        <div className="grid_photo_container">
-
         <img
           src={Florence}
           alt="Florence's Duomo in Italy"
           className="grid_item photo--3"
-          />
-          </div>
+        />
       </div>
     </section>
   );
