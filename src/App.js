@@ -1,4 +1,4 @@
-import {Routes, Route, BrowserRouter as Router} from "react-router-dom";
+import {BrowserRouter as Router} from "react-router-dom";
 
 import './App.css';
 
@@ -11,15 +11,12 @@ import Resume from "./components/Resume";
 function App() {
   return (
     <Router>
-
     <div className="App">
-      {/* <Routes> */}
         <Navbar/>
         <Home/>
         <AboutMe/>
         <Portfolio/>
         <Resume/>
-      {/* </Routes> */}
     </div>
     </Router>
   );
