@@ -1,3 +1,37 @@
+.grid_container {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 50% 50%;
+}
+
+.grid_photo_container {
+  text-align: center;
+}
+
+.grid_item {
+  padding: 5%;
+}
+.grid_item.photo--1 {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: auto;
+}
+.grid_item.photo--2 {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: auto;
+}
+.grid_item.photo--3 {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: auto;
+}
+
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0;
@@ -52,6 +86,74 @@ html {
 .button.resume_button {
   background-color: green;
   color: white;
+}
+
+.grid_container {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 50% 50%;
+}
+
+.grid_photo_container {
+  text-align: center;
+}
+
+.grid_item {
+  padding: 5%;
+}
+.grid_item.photo--1 {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: auto;
+}
+.grid_item.photo--2 {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: auto;
+}
+.grid_item.photo--3 {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: auto;
+}
+
+.grid_container {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 50% 50%;
+}
+
+.grid_photo_container {
+  text-align: center;
+}
+
+.grid_item {
+  padding: 5%;
+}
+.grid_item.photo--1 {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: auto;
+}
+.grid_item.photo--2 {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: auto;
+}
+.grid_item.photo--3 {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: auto;
 }
 
 *, *:before, *:after {
