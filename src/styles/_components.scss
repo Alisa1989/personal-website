@@ -24,21 +24,71 @@
         &--title {
             font-size: 4rem;
         }
-
-        &--text {
-            font-size: 3rem;
-        }
     }
 }
 
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
     justify-content: space-between;
-    align-items: left;
-    background-color: white;
-    padding: 0% 0% 1% 0%;
-    text-align: left;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 0% 5% 1% 5%;
     border-bottom: 1px solid black;
+    z-index: 2;
+
+    &__heading {
+        align-self: center;
+        font-weight: normal;
+    }
+
+    &__heading--main {
+        display: block;
+        font-size: 3rem;
+        letter-spacing: 0.5rem;
+        font-weight: 700;
+        border-bottom: 2px solid black;
+    }
+
+    &__heading--sub {
+        display: block;
+        font-size: 2.5rem;
+        letter-spacing: 2.2rem;
+        font-weight: 700;
+    }
 }
+
+.menu {
+    float: left;
+    overflow: hidden;
+}
+
+.nav-button {
+    color: black;
+    padding: 0.5rem;
+    text-decoration: none;
+    &:hover {
+        color: white;
+        background-color: rgb(61, 61, 61);
+        border-radius: 0.5rem;
+    }
+}
+
+.nav-content {
+    min-width: 160px;
+    z-index: 2;
+}
+
+.dropbtn {
+    visibility: hidden;
+}
+
+.menu:hover .nav-content {
+    display: block;
+  }
 
 .navbar__heading {
     align-self: left;

@@ -18,7 +18,7 @@ const Home = () => {
         </div>
         <a
           href="https://www.linkedin.com/in/alexandre-steinhauslin/"
-          className="home__button"
+          className="button home__button"
         >
           linkedin
         </a>

@@ -1,5 +1,8 @@
+@import 'layout';
+
 //VARIABLES
-$base-color: white;
+$white: white;
+$gray: gray;
 $secondary-color: green;
 $orange-bg: rgba(202, 166, 66, 0.233);
 $red-bg: rgba(255, 0, 0, 0.281);
@@ -7,16 +10,59 @@ $red-bg: rgba(255, 0, 0, 0.281);
 //RESETS
 *, *:before, *:after{
     box-sizing: border-box;
-    font-size: 62.5%;
     margin: 0;
     padding: 0;
 }
 
 body{
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 300;    
-    font-size: 20rem;
+    font-size: 1.6rem;
     line-height: 1.7;
     color: black;
     padding: 2%;
+}
+
+html {
+    font-size: 62.5%;
+    
+    @include respond(tab-land) {  //<1200
+      font-size: 56.25%;
+    }
+  
+    @include respond(tab-port) { //<900
+      font-size: 50%;
+    }
+    
+    @include respond(big-desktop) {
+      font-size: 75%;
+    }
+  
+  }
+
+  .button {
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $gray;
+        padding: 1rem 3rem;
+        display: inline-block;
+        text-align: center;
+        border-radius: 10rem;
+        transition: all 0.2s;
+        position: relative;
+        background-color: $white;
+        color: $gray;
+    }
+  
+    &:active {
+        transform: translateY(-3px);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    }
+
+    &.resume_button{
+        background-color: $secondary-color;
+        color: $white;
+    }
 }

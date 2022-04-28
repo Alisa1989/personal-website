@@ -1,0 +1,74 @@
+//MEDIA QUERY MANAGER
+@mixin respond($breakpoint) {
+    @if $breakpoint==phone {
+        @media (max-width: 37.5em) {
+            @content
+        }
+
+        ; //600px
+    }
+
+    @if $breakpoint==tab-port {
+        @media (max-width: 56.25em) {
+            @content
+        }
+
+        ; //900px
+    }
+
+    @if $breakpoint==tab-land {
+        @media (max-width: 75em) {
+            @content
+        }
+
+        ; //1200px
+    }
+
+    @if $breakpoint==big-desktop {
+        @media (max-width: 112.5em) {
+            @content
+        }
+
+        ; //1800px
+    }
+}
+
+
+//GRID
+.grid_container {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 50% 50%;
+
+}
+
+.grid_item {
+    padding: 5%;
+
+    &.photo--1 {
+        // background-image: url("../src/img/codeLove.jpg") green;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: auto;
+
+    }
+
+    &.photo--2 {
+        // background-image: url('../src/img/SF.jpg') red;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: auto;
+    }
+
+    &.photo--3 {
+        // background-image: url("../src/img/Firenze.jpg") green;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: auto;
+    }
+}
