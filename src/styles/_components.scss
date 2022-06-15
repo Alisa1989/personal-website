@@ -7,6 +7,10 @@
     background-position: center;
     clip-path: polygon(0 0, 100% 0, 100% 75%, 0 97%);
 
+    @include respond(tab-port) {
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    }
+
     &__welcome {
         margin-bottom: 6rem;
 
@@ -19,11 +23,83 @@
             width: 90%;
             margin-bottom: 6rem;
             color: white;
+
+            @include respond(tab-land) {
+                font-weight: bolder;
+                top: 50%;
+            }
         }
 
         &--title {
             font-size: 4rem;
+
+            @include respond(tab-land) {
+                font-size: 2.5rem;
+            }
         }
+    }
+}
+
+.portfolio {
+    padding: 20rem 0;
+    background-image: linear-gradient(to right bottom, $orange-bg, $red-bg), url("../src/img/pinetaNonna.jpg");
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+    margin-top: -15rem;
+
+    @include respond(phone) {
+        padding: 5rem 0;
+        clip-path: none;
+    }
+
+    h2 {
+        position: relative;
+        top: -2rem;
+        font-size: 4rem;
+    }
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    @include respond(phone) {
+        flex-direction: column;
+        place-items: center;
+    }
+}
+
+.projects__card {
+    width: 20%;
+    padding: 5% 0;
+    text-decoration: none;
+
+    .projects__card__text {
+        border: 2px, solid, white;
+        background-color: $secondary-color;
+        height: 100%;
+        color: #000;
+        border-radius: 0.5rem;
+    }
+
+    @include respond(phone) {
+        width: 90%;
+    }
+}
+
+#resume {
+    padding: 5rem;
+}
+
+.about {
+    padding: 5rem 0 15rem 0;
+
+    h2 {
+        margin: 3% 0;
+        font-size: 4rem;
     }
 }
 
@@ -66,10 +142,33 @@
     overflow: hidden;
 }
 
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    letter-spacing: .2rem;
+    transition: all .2;
+
+    @include respond(tab-port) {
+        font-size: 3rem;
+    }
+
+    @include respond(phone) {
+        font-size: 2.5rem;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba($black, .2);
+    }
+}
+
 .nav-button {
     color: black;
     padding: 0.5rem;
     text-decoration: none;
+
     &:hover {
         color: white;
         background-color: rgb(61, 61, 61);
@@ -79,16 +178,37 @@
 
 .nav-content {
     min-width: 160px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 2;
+
+    @include respond(tab-land) {
+        display: none;
+        position: absolute;
+        right: 3%;
+
+        a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+    }
 }
 
 .dropbtn {
     visibility: hidden;
+
+    @include respond(tab-land) {
+        visibility: visible;
+    }
 }
 
 .menu:hover .nav-content {
     display: block;
-  }
+}
 
 .navbar__heading {
     align-self: left;
@@ -101,6 +221,18 @@
     letter-spacing: 0.5rem;
     font-weight: 700;
     border-bottom: 2px solid black;
+
+    @include respond(tab-port) {
+        letter-spacing: 0.3rem;
+        font-family: 2rem;
+        font-size: 2rem;
+    }
+
+    @include respond(phone) {
+        letter-spacing: 0.15rem;
+        font-family: 2rem;
+        font-size: 1.6rem;
+    }
 }
 
 .navbar__heading--sub {
@@ -108,6 +240,16 @@
     font-size: 2.5rem;
     letter-spacing: 2.2rem;
     font-weight: 700;
+
+    @include respond(tab-port) {
+        letter-spacing: 1rem;
+        font-size: 2rem;
+    }
+
+    @include respond(phone) {
+        letter-spacing: 0.5rem;
+        font-size: 1.3rem;
+    }
 }
 
 .nav-button {

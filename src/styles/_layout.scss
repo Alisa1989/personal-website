@@ -25,7 +25,7 @@
     }
 
     @if $breakpoint==big-desktop {
-        @media (max-width: 112.5em) {
+        @media (max-width: 150em) {
             @content
         }
 
@@ -41,6 +41,9 @@
     place-items: center;
     grid-template-rows: auto auto auto;
     grid-template-columns: 50% 50%;
+    @include respond(phone) {
+        display: block;
+    }
 
 }
 

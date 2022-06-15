@@ -6,8 +6,8 @@ import CodeLove from "../img/codeLove.jpg";
 
 const AboutMe = () => {
   return (
-    <section id="about">
-      <h2>About Me</h2>
+    <section id="about" className="about">
+      <h2 className="heading-secondary">About Me</h2>
       <div className="grid_container">
         <div className="grid_item text--1">
           <p>

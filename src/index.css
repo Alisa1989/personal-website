@@ -5,6 +5,11 @@
   grid-template-rows: auto auto auto;
   grid-template-columns: 50% 50%;
 }
+@media (max-width: 37.5em) {
+  .grid_container {
+    display: block;
+  }
+}
 
 .grid_item {
   padding: 5%;
@@ -56,7 +61,7 @@ html {
     font-size: 50%;
   }
 }
-@media (max-width: 112.5em) {
+@media (max-width: 150em) {
   html {
     font-size: 75%;
   }
@@ -80,7 +85,7 @@ html {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 .button.resume_button {
-  background-color: green;
+  background-color: lightgreen;
   color: white;
 }
 
@@ -91,6 +96,11 @@ html {
   grid-template-rows: auto auto auto;
   grid-template-columns: 50% 50%;
 }
+@media (max-width: 37.5em) {
+  .grid_container {
+    display: block;
+  }
+}
 
 .grid_item {
   padding: 5%;
@@ -120,6 +130,11 @@ html {
   place-items: center;
   grid-template-rows: auto auto auto;
   grid-template-columns: 50% 50%;
+}
+@media (max-width: 37.5em) {
+  .grid_container {
+    display: block;
+  }
 }
 
 .grid_item {
@@ -172,7 +187,7 @@ html {
     font-size: 50%;
   }
 }
-@media (max-width: 112.5em) {
+@media (max-width: 150em) {
   html {
     font-size: 75%;
   }
@@ -196,7 +211,7 @@ html {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 .button.resume_button {
-  background-color: green;
+  background-color: lightgreen;
   color: white;
 }
 
@@ -206,6 +221,11 @@ html {
   background-size: cover;
   background-position: center;
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 97%);
+}
+@media (max-width: 56.25em) {
+  .home {
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  }
 }
 .home__welcome {
   margin-bottom: 6rem;
@@ -220,7 +240,81 @@ html {
   margin-bottom: 6rem;
   color: white;
 }
+@media (max-width: 75em) {
+  .home__welcome-container {
+    font-weight: bolder;
+    top: 50%;
+  }
+}
 .home__welcome--title {
+  font-size: 4rem;
+}
+@media (max-width: 75em) {
+  .home__welcome--title {
+    font-size: 2.5rem;
+  }
+}
+
+.portfolio {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(202, 166, 66, 0.233), rgba(255, 0, 0, 0.281)), url("../src/img/pinetaNonna.jpg");
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+  margin-top: -15rem;
+}
+@media (max-width: 37.5em) {
+  .portfolio {
+    padding: 5rem 0;
+    clip-path: none;
+  }
+}
+.portfolio h2 {
+  position: relative;
+  top: -2rem;
+  font-size: 4rem;
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+@media (max-width: 37.5em) {
+  .projects {
+    flex-direction: column;
+    place-items: center;
+  }
+}
+
+.projects__card {
+  width: 20%;
+  padding: 5% 0;
+  text-decoration: none;
+}
+.projects__card .projects__card__text {
+  border: 2px, solid, white;
+  background-color: lightgreen;
+  height: 100%;
+  color: #000;
+  border-radius: 0.5rem;
+}
+@media (max-width: 37.5em) {
+  .projects__card {
+    width: 90%;
+  }
+}
+
+#resume {
+  padding: 5rem;
+}
+
+.about {
+  padding: 5rem 0 15rem 0;
+}
+.about h2 {
+  margin: 3% 0;
   font-size: 4rem;
 }
 
@@ -260,6 +354,29 @@ html {
   overflow: hidden;
 }
 
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  letter-spacing: 0.2rem;
+  transition: all 0.2;
+}
+@media (max-width: 56.25em) {
+  .heading-secondary {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .heading-secondary {
+    font-size: 2.5rem;
+  }
+}
+.heading-secondary:hover {
+  transform: scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
 .nav-button {
   color: black;
   padding: 0.5rem;
@@ -267,17 +384,39 @@ html {
 }
 .nav-button:hover {
   color: white;
-  background-color: #3d3d3d;
+  background-color: rgb(61, 61, 61);
   border-radius: 0.5rem;
 }
 
 .nav-content {
   min-width: 160px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 2;
+}
+@media (max-width: 75em) {
+  .nav-content {
+    display: none;
+    position: absolute;
+    right: 3%;
+  }
+  .nav-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
 }
 
 .dropbtn {
   visibility: hidden;
+}
+@media (max-width: 75em) {
+  .dropbtn {
+    visibility: visible;
+  }
 }
 
 .menu:hover .nav-content {
@@ -296,12 +435,38 @@ html {
   font-weight: 700;
   border-bottom: 2px solid black;
 }
+@media (max-width: 56.25em) {
+  .navbar__heading--main {
+    letter-spacing: 0.3rem;
+    font-family: 2rem;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .navbar__heading--main {
+    letter-spacing: 0.15rem;
+    font-family: 2rem;
+    font-size: 1.6rem;
+  }
+}
 
 .navbar__heading--sub {
   display: block;
   font-size: 2.5rem;
   letter-spacing: 2.2rem;
   font-weight: 700;
+}
+@media (max-width: 56.25em) {
+  .navbar__heading--sub {
+    letter-spacing: 1rem;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .navbar__heading--sub {
+    letter-spacing: 0.5rem;
+    font-size: 1.3rem;
+  }
 }
 
 .nav-button {
