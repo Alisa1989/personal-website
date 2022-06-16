@@ -2,9 +2,8 @@
 
 //VARIABLES
 $white: white;
-$gray: gray;
 $black: black;
-$secondary-color: lightgreen;
+$secondary-color: #624870;
 $orange-bg: rgba(202, 166, 66, 0.233);
 $red-bg: rgba(255, 0, 0, 0.281);
 
@@ -22,6 +21,7 @@ body{
     line-height: 1.7;
     color: black;
     padding: 2%;
+    text-align: center;
 }
 
 html {
@@ -46,15 +46,15 @@ html {
     &:visited {
         text-transform: uppercase;
         text-decoration: none;
-        color: $gray;
         padding: 1rem 3rem;
         display: inline-block;
         text-align: center;
         border-radius: 10rem;
         transition: all 0.2s;
         position: relative;
-        background-color: $white;
-        color: $gray;
+        color: $white;
+        border: 1px solid $white;
+        background-color: $secondary-color;
     }
   
     &:active {
@@ -65,5 +65,7 @@ html {
     &.resume_button{
         background-color: $secondary-color;
         color: $white;
+        border: 1px solid $white;
+
     }
 }
