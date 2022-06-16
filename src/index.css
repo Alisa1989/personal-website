@@ -46,6 +46,7 @@ body {
   line-height: 1.7;
   color: black;
   padding: 2%;
+  text-align: center;
 }
 
 html {
@@ -70,23 +71,24 @@ html {
 .button:link, .button:visited {
   text-transform: uppercase;
   text-decoration: none;
-  color: gray;
   padding: 1rem 3rem;
   display: inline-block;
   text-align: center;
   border-radius: 10rem;
   transition: all 0.2s;
   position: relative;
-  background-color: white;
-  color: gray;
+  color: white;
+  border: 1px solid white;
+  background-color: #624870;
 }
 .button:active {
   transform: translateY(-3px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 .button.resume_button {
-  background-color: lightgreen;
+  background-color: #624870;
   color: white;
+  border: 1px solid white;
 }
 
 .grid_container {
@@ -172,6 +174,7 @@ body {
   line-height: 1.7;
   color: black;
   padding: 2%;
+  text-align: center;
 }
 
 html {
@@ -196,23 +199,24 @@ html {
 .button:link, .button:visited {
   text-transform: uppercase;
   text-decoration: none;
-  color: gray;
   padding: 1rem 3rem;
   display: inline-block;
   text-align: center;
   border-radius: 10rem;
   transition: all 0.2s;
   position: relative;
-  background-color: white;
-  color: gray;
+  color: white;
+  border: 1px solid white;
+  background-color: #624870;
 }
 .button:active {
   transform: translateY(-3px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 .button.resume_button {
-  background-color: lightgreen;
+  background-color: #624870;
   color: white;
+  border: 1px solid white;
 }
 
 .home {
@@ -294,11 +298,11 @@ html {
   text-decoration: none;
 }
 .projects__card .projects__card__text {
-  border: 2px, solid, white;
-  background-color: lightgreen;
   height: 100%;
-  color: #000;
+  color: white;
   border-radius: 0.5rem;
+  border: 2px solid white;
+  background-color: #624870;
 }
 @media (max-width: 37.5em) {
   .projects__card {
@@ -326,7 +330,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
+  background-color: white;
   padding: 0% 5% 1% 5%;
   border-bottom: 1px solid black;
   z-index: 2;
@@ -352,6 +356,7 @@ html {
 .menu {
   float: left;
   overflow: hidden;
+  padding-bottom: 0.2rem;
 }
 
 .heading-secondary {
@@ -384,14 +389,16 @@ html {
 }
 .nav-button:hover {
   color: white;
-  background-color: rgb(61, 61, 61);
+  background-color: #624870;
   border-radius: 0.5rem;
+  box-shadow: 0 1px 6px -2px black;
 }
 
 .nav-content {
   min-width: 160px;
-  background-color: #f9f9f9;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  border-radius: 0.5rem;
+  border: 1px solid #624870;
   z-index: 2;
 }
 @media (max-width: 75em) {
@@ -412,6 +419,12 @@ html {
 
 .dropbtn {
   visibility: hidden;
+  border: 1px solid white;
+  background-color: #624870;
+  border-radius: 0.5rem;
+  color: white;
+  padding: 0.5rem;
+  font-size: 2rem;
 }
 @media (max-width: 75em) {
   .dropbtn {
@@ -467,19 +480,6 @@ html {
     letter-spacing: 0.5rem;
     font-size: 1.3rem;
   }
-}
-
-.nav-button {
-  color: black;
-  padding: 0.5rem;
-  text-decoration: none;
-}
-
-.nav-button:hover {
-  color: white;
-  background-color: #3d3d3d;
-  border-radius: 0.5rem;
-  box-shadow: 0 1px 6px -2px #000;
 }
 
 /*# sourceMappingURL=index.css.map */

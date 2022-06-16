@@ -8,7 +8,7 @@ const Navbar = () => {
             <span className="navbar__heading--sub">Web Developer</span>
         </h3>
         <div className="menu">
-            <button className="dropbtn nav-button">menu</button>
+            <button className="dropbtn ">menu</button>
             <nav className="nav-content">
                 <a className="nav-button" href="#home"> Home </a>
                 <a className="nav-button" href="#about"> About Me </a>
