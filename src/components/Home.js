@@ -6,7 +6,7 @@ const Home = () => {
       <div className="home__welcome-container">
         <div className="home__welcome">
           <h1 className="home__welcome--title">
-            I'm and I am a React Engineer
+            I'm Alex and I am a React Engineer
           </h1>
           <div className="home__welcome--text">
             <p>
