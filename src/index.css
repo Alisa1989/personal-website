@@ -398,7 +398,6 @@ html {
   min-width: 160px;
   background-color: white;
   border-radius: 0.5rem;
-  border: 1px solid #624870;
   z-index: 2;
 }
 @media (max-width: 75em) {
@@ -406,6 +405,7 @@ html {
     display: none;
     position: absolute;
     right: 3%;
+    border: 1px solid #624870;
   }
   .nav-content a {
     float: none;
