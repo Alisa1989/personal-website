@@ -1,17 +1,17 @@
 export const projects = [
     {
-        link: "https://github.com/Alisa1989/team-builder/tree/alexandre-steinhauslin",
-        title: "React Form",
-        description: "This is an example of Form management in React"
+        link: "https://github.com/Alisa1989/personal-website",
+        title: "This Website",
+        description: "This is how I built this website in React"
     },
     {
-        link: "https://github.com/Alisa1989/React-Todo/tree/alexandre-steinhauslin",
-        title: "To-Do List",
-        description: "This project demonstrates my ability to use the older technique of class components in React."
+        link: "hhttps://github.com/Alisa1989/Store64",
+        title: "Store website",
+        description: "This project demonstrates my ability as a Full Stack developer"
     },
     {
-        link: "https://github.com/Alisa1989/React-Github-User-Card/tree/alexandre-steinhauslin",
-        title: "Github Usercard",
-        description: "Another example of the usage of class components and the React lifecycle."
+        link: "https://github.com/BloomTech-Labs/scribble-stadium-fe",
+        title: "Scribble Stadium",
+        description: "Collaborated with a team to create this learning app"
     }
 ]
