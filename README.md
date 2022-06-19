@@ -6,7 +6,7 @@
 * [Setup](#setup)
 
 # General Info
-  This is the repo for my portfolio website that I am currently ultizins. It is a very simple SPA built with React.
+  This is the repo for my [portfolio website] (https://www.alexandresteinhauslin.dev/) that I am currently ultizing. It is a very simple SPA built with React.
  
 # Technologies
  Project is created with:
