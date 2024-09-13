@@ -1,21 +1,18 @@
-import {BrowserRouter as Router} from "react-router-dom";
-
+import { Routes, Route, BrowserRouter as Router} from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import AboutMe from "./components/AboutMe";
-import Portfolio from "./components/Portofolio";
-import Resume from "./components/Resume";
+import { LandingPage } from "./pages/landing";
+import { Notes } from "./pages/notes";
+import { Odin } from "./pages/odin";
 
 function App() {
   return (
     <Router>
-    <div className="App">
-        <Navbar/>
-        <Home/>
-        <AboutMe/>
-        <Portfolio/>
-        <Resume/>
-    </div>
+        <Navbar />
+      <Routes>
+        <Route path="" element={<LandingPage />} />
+        <Route path="/notes" element={<Notes />} />
+        <Route path="/odin" element={<Odin />} />
+      </Routes>
     </Router>
   );
 }

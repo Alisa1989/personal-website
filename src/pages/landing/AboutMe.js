@@ -1,8 +1,8 @@
 import React from "react";
 
-import Florence from "../img/Firenze.jpg";
-import SF from "../img/SF.jpg";
-import CodeLove from "../img/codeLove.jpg";
+import Florence from "../../img/Firenze.jpg";
+import SF from "../../img/SF.jpg";
+import CodeLove from "../../img/codeLove.jpg";
 
 const AboutMe = () => {
   return (

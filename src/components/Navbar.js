@@ -10,10 +10,10 @@ const Navbar = () => {
         <div className="menu">
             <button className="dropbtn ">menu</button>
             <nav className="nav-content">
-                <a className="nav-button" href="#home"> Home </a>
-                <a className="nav-button" href="#about"> About Me </a>
-                <a className="nav-button" href="#projects"> Projects</a>
-                <a className="nav-button" href="#resume"> Resume </a>
+                <a className="nav-button" href="/#home"> Home </a>
+                <a className="nav-button" href="/#about"> About Me </a>
+                <a className="nav-button" href="/#projects"> Projects</a>
+                <a className="nav-button" href="/#resume"> Resume </a>
             </nav>
         </div>
     </div>

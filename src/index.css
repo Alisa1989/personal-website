@@ -378,7 +378,6 @@ html {
   }
 }
 .heading-secondary:hover {
-  transform: scale(1.1);
   text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
@@ -483,3 +482,13 @@ html {
 }
 
 /*# sourceMappingURL=index.css.map */
+
+.notes {
+  margin-top: 10rem;
+  text-align: left;
+}
+
+.locations {
+  display: flex;
+  justify-content: space-evenly;
+}

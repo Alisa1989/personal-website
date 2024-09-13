@@ -1,5 +1,5 @@
 import React from "react";
-import resume from "../other_resources/Alexandre Steinhauslin.pdf";
+import resume from "../../other_resources/Alexandre Steinhauslin.pdf";
 
 const Resume = () => {
     return(
